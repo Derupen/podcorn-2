@@ -1,0 +1,95 @@
+@layer base {
+
+    /*.container {
+        @apply max-w-1218 px-24 mx-auto;
+    }*/
+
+    body {
+        @apply font-gilroy min-w-320 text-black-100 text-16 leading-base;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    a:not[class] {
+        @apply text-black-100 hover:text-red transition-all no-underline hover:no-underline focus:no-underline;
+        outline: none !important;
+    }
+
+    img {
+        @apply max-w-full h-auto inline-block align-top;
+    }
+
+    p {
+        margin: 0 0 1em;
+    }
+
+    blockquote, q{
+        margin:0;
+        padding:0;
+        border:0;
+        outline:0;
+        font-size:100%;
+        vertical-align:baseline;
+        background:transparent;
+    }
+
+    blockquote {
+        quotes: none;
+    }
+
+    blockquote:before, blockquote:after {
+        content:'';
+        content:none;
+    }
+
+    input:focus, textarea:focus, select:focus {
+        outline: none !important;
+        outline-offset: 0 !important;
+        box-shadow: none !important;
+    }
+
+    select {
+         -webkit-appearance: none; 
+    }
+    
+    h1, h2, h3, h4, h5, h6 { 
+        @apply font-gilroy font-bold text-black-100;
+        margin-bottom: 0.5em;
+    }
+
+    h1.lg {
+        @apply font-georgia text-40 leading-a1;
+    }
+
+    h2.lg {
+        @apply font-georgia text-32 leading-a375;
+    }
+
+    h1 {
+        @apply text-32 leading-a25;
+    }
+
+    h2 {
+        @apply text-24 leading-a33 font-semibold;
+    }
+
+    h3 {
+        @apply text-20 leading-a1;
+    }
+
+    h4 {
+        @apply text-18 leading-a22 font-semibold;
+    }
+
+    h5 {
+        @apply text-16 leading-a25 font-semibold;
+    }
+
+    h6 {
+        @apply text-14 leading-a428 font-semibold;
+    }
+
+    .fc { 
+        @apply flex items-center justify-center; 
+    }
+}

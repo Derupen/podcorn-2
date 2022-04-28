@@ -1,0 +1,46 @@
+.btn {
+	@apply inline-flex items-center justify-center h-48 py-14 px-28 text-14 leading-a428 tracking-1 border border-transparent group transition-all;
+}
+
+.btn-sm {
+	@apply h-40 py-10 px-20;
+}
+
+.btn-lg {
+	@apply h-56 py-18 px-40 text-16 leading-a25;
+}
+
+.btn-blue {
+	@apply bg-black-100 text-white hover:bg-red;
+}
+
+.btn-blue.disabled,
+.btn-blue:disabled {
+	@apply bg-black-16 pointer-events-none;
+}
+
+.btn-blue-outline {
+	@apply border-black-100 text-black-100 hover:bg-black-100 hover:text-white;
+}
+
+.btn-blue-outline:hover path {
+	stroke: white;
+}
+
+.btn-blue-outline.disabled,
+.btn-blue-outline:disabled {
+	@apply border-black-16 text-black-16 pointer-events-none;
+}
+
+.btn-blue-outline.disabled path,
+.btn-blue-outline:disabled path {
+	stroke: #dcdde1;
+}
+
+.link {
+	@apply tracking-1 text-black-100 hover:text-red transition-all;
+}
+
+.link.disabled {
+	@apply text-black-16 pointer-events-none;
+}

@@ -1,0 +1,7 @@
+node_modules
+assets/compiled
+.DS_Store
+.thumbs
+.idea
+.env
+mix-manifest.json
